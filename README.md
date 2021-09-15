@@ -1,5 +1,5 @@
 # scraped-tutorials
-Demo app to get matching content from YouTube and Medium using Node and Puppeteer.
+Web Scraping for collect information from differents site web for compare prices. TuMarchante
 
 ## Getting Started
  - Run `npm i` (Make sure you have Node installed first)
