@@ -37,11 +37,14 @@ html
                 tr
                   th Articulo
                   th Precio
-              tbody
-              for article in data.articles
-                tr
-                  td=`${article.tittle}`
-                  td=`${article.price}`
+              tbody              
+              - var count = 0;
+              each article in data.articles
+                if count < 3
+                  tr                  
+                    td=`${article.tittle}`
+                    td=`${article.price}`                  
+                  - count++;
           .col
             table.table.table-bordered
               thead.thead-dark
@@ -52,10 +55,13 @@ html
                   th Articulo
                   th Precio
               tbody
-              for article in data.articlesCentral
-                tr
-                  td=`${article.tittle}`
-                  td=`${article.price}`
+              - var count2 = 0;
+              each article in data.articlesCentral
+                if count2 < 3
+                  tr                  
+                    td=`${article.tittle}`
+                    td=`${article.price}`                  
+                  - count2++;
           .col
             table.table.table-bordered
               thead.thead-dark
@@ -65,11 +71,14 @@ html
                 tr
                   th Articulo
                   th Precio
-              tbody
-              for article in data.articlesChedraui
-                tr
-                  td=`${article.tittle}`
-                  td=`${article.price}`
+              tbody              
+              - var count3 = 0;
+              each article in data.articlesChedraui
+                if count3 < 3
+                  tr                  
+                    td=`${article.tittle}`
+                    td=`${article.price}`                  
+                  - count3++;
           .col
             table.table.table-bordered
               thead.thead-dark
@@ -79,14 +88,17 @@ html
                 tr
                   th Articulo
                   th Precio
-              tbody
-              for article in data.articlesSuperama
-                tr
-                  td=`${article.tittle}`
-                  td=`${article.price}`
+              tbody              
+              - var count4 = 0;
+                each article in data.articlesSuperama
+                  if count4 < 3
+                    tr                  
+                      td=`${article.tittle}`
+                      td=`${article.price}`                  
+                    - count4++;
 
 
 
 
 
-          script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js', integrity='sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns', crossorigin='anonymous')
+      script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js', integrity='sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns', crossorigin='anonymous')

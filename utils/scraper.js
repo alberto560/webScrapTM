@@ -147,9 +147,9 @@ const scrapeSuperama = async () => {
   await page.waitFor(1000);
 
   await page.keyboard.press('Enter');
-  await page.waitFor(2000);
+  await page.waitFor(7000);
   //await page.screenshot({path: 'superama3.jpg'});
-  await page.waitFor(2000);
+  await page.waitFor(6000);
   const productos = await page.evaluate(()=>{
 
     const productos = document.querySelectorAll('.isotope-item .itemGrid .upcName p a');
