@@ -1,5 +1,5 @@
 # scraped-tutorials
-Web Scraping for collect information from differents site web for compare prices. TuMarchante
+Web Scraping for collect information from differents site web for compare prices. TuMarchante using Node.
 
 ## Getting Started
  - Run `npm i` (Make sure you have Node installed first)
